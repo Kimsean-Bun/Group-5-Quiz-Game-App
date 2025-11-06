@@ -1,1 +1,51 @@
 /* Add our CSS here */
+.header-container {
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC58C;
+}
+
+.logo-container {
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.header-subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    font-size: 1.25em;
+}
+
+.nav-container a {
+    padding: 20px 40px;
+    cursor: pointer;
+    background-color: #FFCE72;
+    text-decoration: none;
+    transition: background-color ease-in-out 0.25s;
+}
+
+.nav-container a:hover {
+    background-color: #a18249;
+}
+
+.nav-container a:visited {
+    color: #000000;
+}
+
+.website-name {
+    font-size: 3em;
+    margin: 10px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+}
