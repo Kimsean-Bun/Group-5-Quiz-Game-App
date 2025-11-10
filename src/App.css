@@ -8,6 +8,15 @@
     background-color: #FFC58C;
 }
 
+.footer-container {
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC58C;
+}
+
 .logo-container {
     background-color: #ffffff;
     border-radius: 100%;
@@ -21,9 +30,14 @@
     align-items: center;
 }
 
-.nav-container {
+.header-subcontainer .nav-container {
     display: flex;
     font-size: 1.25em;
+}
+
+.footer-container .nav-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-container a {
@@ -48,4 +62,9 @@
     letter-spacing: 5px;
     word-spacing: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+}
+
+.address-container {
+    padding: 5px 20px;
+    background-color: #FFCE72;
 }
