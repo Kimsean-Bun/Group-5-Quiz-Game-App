@@ -1,31 +1,16 @@
-import './App.css';
-import { useState } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import GamePage from './components/GamePage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import GamePage from "./Pages/GamePage";
+// import Leaderboard from "./pages/Leaderboard";
 
-function App() {
-
-  const sampleQuestion = {
-    id: 1,
-    question: "What is the capital of France?",
-    options: ["Paris", "London", "Berlin"],
-    correctAnswer: "Paris",
-  };
-
+export default function App() {
   return (
-    <div className="app-container">
-      <Header />
-      <Home />
-      <GamePage
-          questionData={sampleQuestion}
-          user="USER#1"
-          onNextQuestion={() => alert("Next question!")}
-        />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/game" element={<GamePage />} />
+        {/* <Route path="/leaderboard" element={<Leaderboard />} /> */}
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
